@@ -1,0 +1,72 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.idea/.name
+.idea/dataSources.local.xml
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/deployment.xml
+.idea/encodings.xml
+.idea/HYshop.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/workspace.xml
+Help/Bootstrap.html
+Help/html/Html语法字符.txt
+Help/bootstrap/Class功能.txt
+Help/jQuery/使用JS对form的内容验证失败后阻止提交.html
+Help/jQuery/Dom元素加载完毕后执行.html
+Help/php/PHP 写入文件 - fwrite().php
+Help/php/php 空格-换行-跳格.php
+Help/php/PHP删除指定目录下的所有文件（保留目录）.php
+Help/php/php计算两个日期相差天数的方法函数.php
+Help/php/去除虚框禁用焦点.php
+Help/shop/SQL-查询语句.hy
+Help/shop/公共函数.txt
