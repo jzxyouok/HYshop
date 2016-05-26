@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link href="{$smarty.const.ADMIN_CSS_URL}bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="breadcrumb" contenteditable="false" style="margin-top:15px;;margin-bottom:15px;border: 1px solid #ddd;" onfocus="this.blur()">
+        <li class="active">商品列表</li>
+    </ul>
+    <table class="table table-striped table-bordered table-hover">
+        <caption  style="margin-bottom: 15px;padding: 0;">
+            <form class="form-inline">
+                <select class="form-control" style="margin-right: 10px;">
+                    <option>全部分类</option>
+                    <option>服饰服装</option>
+                    <option>手机数码</option>
+                    <option>办公用品</option>
+                </select>
+                <select class="form-control" style="margin-right: 10px;">
+                    <option>所有品牌</option>
+                    <option>鸿宇</option>
+                    <option>苹果</option>
+                    <option>联想</option>
+                </select>
+                <select class="form-control" style="margin-right: 10px;">
+                    <option>全部</option>
+                    <option>上架</option>
+                    <option>下架</option>
+                </select>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail2">关键字</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-default" onfocus="this.blur()"><span class=" glyphicon glyphicon-search"></span>&nbsp;搜索
+                </button>
+                <a href="{$smarty.const.__MODULE__}/Goods/add_goods" type="button" class="btn btn-success pull-right" onfocus="this.blur()"><span class="glyphicon glyphicon-plus"></span>&nbsp;添加商品</a>
+            </form>
+        </caption>
+        <thead>
+        <tr>
+            <th><label class="checkbox-inline"><input type="checkbox" value=""> 编号</label></th>
+            <th class="text-center">商品名称</th>
+            <th class="text-center">销量</th>
+            <th class="text-center">价格</th>
+            <th class="text-center">库存</th>
+            <th class="text-center">操作</th>
+        </tr>
+        </thead>
+        <!--<thead><tr><th><input type="checkbox" onfocus="this.blur()"><span style="position: relative;top: -1px;">&nbsp;编号</span></th><th class="text-center">商品名称</th><th class="text-center">货号</th><th class="text-center">价格</th><th class="text-center">库存</th><th class="text-center">操作</th></tr></thead>-->
+        <tbody>
+        {foreach $info as $k => $v}
+        <tr>
+            <td><label class="checkbox-inline"><input type="checkbox" value="">{$v.goods_id}</label></td>
+            <td>{$v.goods_name}</td>
+            <td>{$v.goods_sales}</td>
+            <td class="text-right">{$v.shop_price}</td>
+            <td class="text-right">{$v.goods_number}</td>
+            <td class="text-center">
+                <a href="{$smarty.const.__MODULE__}/Goods/add_goods" type="button" onfocus="this.blur()" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit" role="button"></span>&nbsp;修改</a>&nbsp;&nbsp;
+                <a type="button" onfocus="this.blur()" class="btn btn-danger btn-xs" role="button"><span class="glyphicon glyphicon-trash"></span>&nbsp;删除</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>
+<script src="{$smarty.const.ADMIN_JS_URL}jquery.min.js"></script>
+<script src="{$smarty.const.ADMIN_JS_URL}bootstrap.min.js"></script>
+</body>
+</html>

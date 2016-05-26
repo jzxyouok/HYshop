@@ -1,0 +1,49 @@
+[ 2016-04-25T19:53:35+08:00 ] ::1 /shop/index.php/admin/index/__CONTROLLER__/head
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T19:53:36+08:00 ] ::1 /shop/index.php/admin/index/__CONTROLLER__/left
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T19:53:38+08:00 ] ::1 /shop/index.php/admin/index/__CONTROLLER__/right
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T19:53:46+08:00 ] ::1 /shop/index.php/admin/goods/sholist
+ERR: 非法操作:sholist
+
+[ 2016-04-25T19:53:53+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1054:Unknown column 'goods_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hy_goods` WHERE ( goods_price > 100 ) 
+
+[ 2016-04-25T19:54:56+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1054:Unknown column 'goods_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hy_goods` WHERE ( goods_price > 100 ) 
+
+[ 2016-04-25T19:56:27+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1054:Unknown column 'goods_price' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `hy_goods` WHERE ( goods_price > 100 ) 
+
+[ 2016-04-25T20:38:14+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1146:Table 'root.goods_id' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_id`
+
+[ 2016-04-25T20:38:32+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1146:Table 'root.goods_id' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_id`
+
+[ 2016-04-25T20:39:00+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1146:Table 'root.goods_id' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_id`
+
+[ 2016-04-25T20:39:20+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: 1146:Table 'root.goods_id' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `goods_id`
+
+[ 2016-04-25T21:26:49+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: Think\Controller:assing方法不存在！
+
+[ 2016-04-25T21:27:14+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: Think\Controller:assing方法不存在！
+
+[ 2016-04-25T21:27:17+08:00 ] ::1 /shop/index.php/admin/goods/showlist
+ERR: Think\Controller:assing方法不存在！
+

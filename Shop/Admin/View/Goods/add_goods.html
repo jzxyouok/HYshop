@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link href="{$smarty.const.ADMIN_CSS_URL}bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="breadcrumb" style="margin-top:15px;;margin-bottom:15px;border: 1px solid #ddd;" onfocus="this.blur()">
+        <li><a href="{$smarty.const.__MODULE__}/Goods/showlist" style="cursor: pointer">商品列表</a> <span class="divider"></span></li>
+        <li class="active">添加商品</li>
+    </ul>
+
+    <form class="form-horizontal" action="{$smarty.const.__SELF__}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品名称：</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="goods_name" placeholder="请输入商品名称">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品分类：</label>
+            <div class="col-sm-3">
+                <select class="form-control col-sm-2" name="">
+                    <option>请选择</option>
+                    <option>手机数码</option>
+                    <option>服装鞋帽</option>
+                    <option>家用电器</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品品牌：</label>
+            <div class="col-sm-3">
+                <select class="form-control" name="">
+                    <option>请选择</option>
+                    <option>联想</option>
+                    <option>华为</option>
+                    <option>三星</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品数量：</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="goods_number" placeholder="请输入商品名称">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品销量：</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="goods_sales" placeholder="请输入商品名称">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品价格：</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" name="shop_price" placeholder="Money">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品图片：</label>
+            <div class="col-sm-3" style="margin-top: 5px;">
+                <input class="file" name="goods_introduce" type="file">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <div class="col-md-1"><label><input type="checkbox">新品</label>&nbsp;&nbsp;</div>
+                    <div class="col-md-1"><label><input type="checkbox">热销</label>&nbsp;&nbsp;</div>
+                    <div class="col-md-1"><label><input type="checkbox">推荐</label></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">商品介绍：</label>
+            <div class="col-sm-6">
+                <textarea class="form-control" name="goods_intro" placeholder="请输入宝贝介绍"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary btn-success" type="submit">保存内容</button>
+                <button type="submit" class="btn btn-default">取消</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+<script src="{$smarty.const.ADMIN_JS_URL}jquery.min.js"></script>
+<script src="{$smarty.const.ADMIN_JS_URL}bootstrap.min.js"></script>
+</body>
+</html>
